@@ -1,10 +1,9 @@
-/*
- * main.cpp
- *
- *  Created on: 2015年9月30日
- *      Author: laolang
+/**
+ * @mainpage 这是程序的主页
+ * 程序的功能是为simplereader作准备
+ * @page page1 A documentation page
+ * 
  */
-
 #include<iostream>
 
 #include"../../include/person.h"
