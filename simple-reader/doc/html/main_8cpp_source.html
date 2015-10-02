@@ -139,23 +139,97 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过email查询：&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    p = pc-&gt;<a class="code" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">selectByEmail</a>(<span class="stringliteral">&quot;1236@123.com&quot;</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::cout &lt;&lt; p-&gt;<a class="code" href="classPerson.html#af167f48c3e444a5c5922829139621e9d">toString</a>() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::vector&lt;Person&gt; *personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过name删除&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    pc-&gt;<a class="code" href="classIPersonCrud.html#a9cad4bed7b82d6ed5decf695f1aeb4c5">deleteByName</a>(<span class="stringliteral">&quot;小代码&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;测试：size:&quot;</span> &lt;&lt; personList-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过phone删除&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    pc-&gt;<a class="code" href="classIPersonCrud.html#aaf0c3740b90613833b45017e3e3d680b">deleteByPhone</a>(<span class="stringliteral">&quot;111&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;测试：size:&quot;</span> &lt;&lt; personList-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过email删除&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    pc-&gt;<a class="code" href="classIPersonCrud.html#a770e34ae54bbdea889687ef76fe2ffcd">deleteByEmail</a>(<span class="stringliteral">&quot;666@qq.com&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;测试：size:&quot;</span> &lt;&lt; personList-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过给定的person添加：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classPerson.html">Person</a> pnewone(<span class="stringliteral">&quot;新一&quot;</span>, <span class="stringliteral">&quot;011&quot;</span>, <span class="stringliteral">&quot;0101@00.com&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    pc-&gt;<a class="code" href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">add</a>(pnewone);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;测试：size:&quot;</span> &lt;&lt; personList-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;通过给定的person属性添加：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    pc-&gt;<a class="code" href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">add</a>(<span class="stringliteral">&quot;新二&quot;</span>,<span class="stringliteral">&quot;000222&quot;</span>,<span class="stringliteral">&quot;000222@qq.com&quot;</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;输出所有：&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;测试：size:&quot;</span> &lt;&lt; personList-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    personList = pc-&gt;<a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Person&gt;::iterator it = personList-&gt;begin();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            it != personList-&gt;end(); ++it) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::cout &lt;&lt; it-&gt;toString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="ttc" id="classIPersonCrud_html_a7b934981b0f3b8a3709b91c3c23255a7"><div class="ttname"><a href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">IPersonCrud::selectByName</a></div><div class="ttdeci">virtual Person * selectByName(std::string name)=0</div><div class="ttdoc">根据名字查询联系人 </div></div>
 <div class="ttc" id="classImplPersonCrudPugixml_html"><div class="ttname"><a href="classImplPersonCrudPugixml.html">ImplPersonCrudPugixml</a></div><div class="ttdoc">联系人crud实现 </div><div class="ttdef"><b>Definition:</b> <a href="ImplPersonCrudPugixml_8hpp_source.html#l00016">ImplPersonCrudPugixml.hpp:16</a></div></div>
-<div class="ttc" id="classIPersonCrud_html"><div class="ttname"><a href="classIPersonCrud.html">IPersonCrud</a></div><div class="ttdoc">联系人crud接口 </div><div class="ttdef"><b>Definition:</b> <a href="IPersonCrud_8h_source.html#l00015">IPersonCrud.h:15</a></div></div>
+<div class="ttc" id="classIPersonCrud_html"><div class="ttname"><a href="classIPersonCrud.html">IPersonCrud</a></div><div class="ttdoc">联系人crud接口 </div><div class="ttdef"><b>Definition:</b> <a href="IPersonCrud_8h_source.html#l00016">IPersonCrud.h:16</a></div></div>
+<div class="ttc" id="classIPersonCrud_html_a770e34ae54bbdea889687ef76fe2ffcd"><div class="ttname"><a href="classIPersonCrud.html#a770e34ae54bbdea889687ef76fe2ffcd">IPersonCrud::deleteByEmail</a></div><div class="ttdeci">virtual void deleteByEmail(std::string email)=0</div><div class="ttdoc">通过email删除联系人 </div></div>
 <div class="ttc" id="classPerson_html_af167f48c3e444a5c5922829139621e9d"><div class="ttname"><a href="classPerson.html#af167f48c3e444a5c5922829139621e9d">Person::toString</a></div><div class="ttdeci">string toString()</div><div class="ttdoc">输出联系人的信息 </div><div class="ttdef"><b>Definition:</b> <a href="person_8cpp_source.html#l00022">person.cpp:22</a></div></div>
+<div class="ttc" id="classIPersonCrud_html_aaf0c3740b90613833b45017e3e3d680b"><div class="ttname"><a href="classIPersonCrud.html#aaf0c3740b90613833b45017e3e3d680b">IPersonCrud::deleteByPhone</a></div><div class="ttdeci">virtual void deleteByPhone(std::string phone)=0</div><div class="ttdoc">通过phone删除联系人 </div></div>
 <div class="ttc" id="classIPersonCrud_html_a118295c6d97902d5f9754eee88177a88"><div class="ttname"><a href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">IPersonCrud::selectByPhone</a></div><div class="ttdeci">virtual Person * selectByPhone(std::string phone)=0</div><div class="ttdoc">根据电话查询联系人 </div></div>
 <div class="ttc" id="classPerson_html"><div class="ttname"><a href="classPerson.html">Person</a></div><div class="ttdoc">联系人定义 </div><div class="ttdef"><b>Definition:</b> <a href="person_8h_source.html#l00016">person.h:16</a></div></div>
+<div class="ttc" id="classIPersonCrud_html_af0e822191cf2dec35b574ec9f2e81047"><div class="ttname"><a href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">IPersonCrud::selectAll</a></div><div class="ttdeci">virtual std::vector&lt; Person &gt; * selectAll()=0</div><div class="ttdoc">查询所有的联系人 </div></div>
 <div class="ttc" id="classIPersonCrud_html_aa843677f6c86dd68d1aded4a47dd336c"><div class="ttname"><a href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">IPersonCrud::selectByEmail</a></div><div class="ttdeci">virtual Person * selectByEmail(std::string email)=0</div><div class="ttdoc">根据email查询联系人信息 </div></div>
+<div class="ttc" id="classIPersonCrud_html_a65b5ce29a7c3485b83d54f139971e412"><div class="ttname"><a href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">IPersonCrud::add</a></div><div class="ttdeci">virtual void add(Person person)=0</div><div class="ttdoc">根据给定的person对象添加 </div></div>
+<div class="ttc" id="classIPersonCrud_html_a9cad4bed7b82d6ed5decf695f1aeb4c5"><div class="ttname"><a href="classIPersonCrud.html#a9cad4bed7b82d6ed5decf695f1aeb4c5">IPersonCrud::deleteByName</a></div><div class="ttdeci">virtual void deleteByName(std::string name)=0</div><div class="ttdoc">通过name删除联系人 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ddea980f3a1033b7591b5636aa027f3c.html">contacts</a></li><li class="navelem"><b>main.cpp</b></li>
-    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:48 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 03:24:39 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

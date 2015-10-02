@@ -135,12 +135,246 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:aa843677f6c86dd68d1aded4a47dd336c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPerson.html">Person</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">selectByEmail</a> (std::string email)=0</td></tr>
 <tr class="memdesc:aa843677f6c86dd68d1aded4a47dd336c"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据email查询联系人信息  <a href="#aa843677f6c86dd68d1aded4a47dd336c">更多...</a><br/></td></tr>
 <tr class="separator:aa843677f6c86dd68d1aded4a47dd336c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e822191cf2dec35b574ec9f2e81047"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classPerson.html">Person</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a> ()=0</td></tr>
+<tr class="memdesc:af0e822191cf2dec35b574ec9f2e81047"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询所有的联系人  <a href="#af0e822191cf2dec35b574ec9f2e81047">更多...</a><br/></td></tr>
+<tr class="separator:af0e822191cf2dec35b574ec9f2e81047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cad4bed7b82d6ed5decf695f1aeb4c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#a9cad4bed7b82d6ed5decf695f1aeb4c5">deleteByName</a> (std::string name)=0</td></tr>
+<tr class="memdesc:a9cad4bed7b82d6ed5decf695f1aeb4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过name删除联系人  <a href="#a9cad4bed7b82d6ed5decf695f1aeb4c5">更多...</a><br/></td></tr>
+<tr class="separator:a9cad4bed7b82d6ed5decf695f1aeb4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0c3740b90613833b45017e3e3d680b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#aaf0c3740b90613833b45017e3e3d680b">deleteByPhone</a> (std::string phone)=0</td></tr>
+<tr class="memdesc:aaf0c3740b90613833b45017e3e3d680b"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过phone删除联系人  <a href="#aaf0c3740b90613833b45017e3e3d680b">更多...</a><br/></td></tr>
+<tr class="separator:aaf0c3740b90613833b45017e3e3d680b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770e34ae54bbdea889687ef76fe2ffcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#a770e34ae54bbdea889687ef76fe2ffcd">deleteByEmail</a> (std::string email)=0</td></tr>
+<tr class="memdesc:a770e34ae54bbdea889687ef76fe2ffcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过email删除联系人  <a href="#a770e34ae54bbdea889687ef76fe2ffcd">更多...</a><br/></td></tr>
+<tr class="separator:a770e34ae54bbdea889687ef76fe2ffcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b5ce29a7c3485b83d54f139971e412"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">add</a> (<a class="el" href="classPerson.html">Person</a> person)=0</td></tr>
+<tr class="memdesc:a65b5ce29a7c3485b83d54f139971e412"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的person对象添加  <a href="#a65b5ce29a7c3485b83d54f139971e412">更多...</a><br/></td></tr>
+<tr class="separator:a65b5ce29a7c3485b83d54f139971e412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013dfc49bf133ec92e5c5c6803a3aa64"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPersonCrud.html#a013dfc49bf133ec92e5c5c6803a3aa64">add</a> (std::string name, std::string phone, std::string email)=0</td></tr>
+<tr class="memdesc:a013dfc49bf133ec92e5c5c6803a3aa64"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的属性值添加  <a href="#a013dfc49bf133ec92e5c5c6803a3aa64">更多...</a><br/></td></tr>
+<tr class="separator:a013dfc49bf133ec92e5c5c6803a3aa64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>联系人crud接口 </p>
 
-<p>在文件 <a class="el" href="IPersonCrud_8h_source.html">IPersonCrud.h</a> 第 <a class="el" href="IPersonCrud_8h_source.html#l00015">15</a> 行定义.</p>
+<p>在文件 <a class="el" href="IPersonCrud_8h_source.html">IPersonCrud.h</a> 第 <a class="el" href="IPersonCrud_8h_source.html#l00016">16</a> 行定义.</p>
 </div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a65b5ce29a7c3485b83d54f139971e412"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IPersonCrud::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPerson.html">Person</a>&#160;</td>
+          <td class="paramname"><em>person</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据给定的person对象添加 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">person</td><td>给定的person对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#a2c44d13a5584ced8c9ce5892c0e31ad6">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a013dfc49bf133ec92e5c5c6803a3aa64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IPersonCrud::add </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>phone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>email</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据给定的属性值添加 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>要添加的联系人的名字 </td></tr>
+    <tr><td class="paramname">phone</td><td>要添加的联系人的电话 </td></tr>
+    <tr><td class="paramname">email</td><td>要添加的联系人的email </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#a3d3f33de07749f1cac39e7ebd74a687b">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a770e34ae54bbdea889687ef76fe2ffcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IPersonCrud::deleteByEmail </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>email</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过email删除联系人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>要删除的联系人的email </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#a5a306d301c2b1e385fd39b43646054d3">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cad4bed7b82d6ed5decf695f1aeb4c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IPersonCrud::deleteByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过name删除联系人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>要删除的出联系人的名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#adc8e1dabb0cfe3ee174d252ad6882182">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf0c3740b90613833b45017e3e3d680b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IPersonCrud::deleteByPhone </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>phone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过phone删除联系人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td>要删除的联系人的电话 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#ad157800f75e1b1df3030a77081523703">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0e822191cf2dec35b574ec9f2e81047"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="classPerson.html">Person</a>&gt;* IPersonCrud::selectAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询所有的联系人 </p>
+<dl class="section return"><dt>返回</dt><dd>联系人对象的vector集合 </dd></dl>
+
+<p>在 <a class="el" href="classImplPersonCrudPugixml.html#ab564a94ef93e43409fbd10e4a1ffd9de">ImplPersonCrudPugixml</a> 内被实现.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa843677f6c86dd68d1aded4a47dd336c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +507,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classIPersonCrud.html">IPersonCrud</a></li>
-    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:50 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 03:24:40 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

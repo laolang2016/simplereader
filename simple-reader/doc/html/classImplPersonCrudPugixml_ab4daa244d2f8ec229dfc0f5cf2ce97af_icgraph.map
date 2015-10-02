@@ -1,5 +1,8 @@
 <map id="ImplPersonCrudPugixml::selectNode" name="ImplPersonCrudPugixml::selectNode">
-<area shape="rect" id="node2" href="$classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187" title="根据email查询联系人信息 " alt="" coords="216,5,379,46"/>
-<area shape="rect" id="node3" href="$classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed" title="根据名字查询联系人 " alt="" coords="216,70,379,111"/>
-<area shape="rect" id="node4" href="$classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586" title="根据电话查询联系人 " alt="" coords="216,135,379,177"/>
+<area shape="rect" id="node2" href="$classImplPersonCrudPugixml.html#a5a306d301c2b1e385fd39b43646054d3" title="通过email删除联系人 " alt="" coords="216,5,379,46"/>
+<area shape="rect" id="node3" href="$classImplPersonCrudPugixml.html#adc8e1dabb0cfe3ee174d252ad6882182" title="通过name删除联系人 " alt="" coords="216,70,379,111"/>
+<area shape="rect" id="node4" href="$classImplPersonCrudPugixml.html#ad157800f75e1b1df3030a77081523703" title="通过phone删除联系人 " alt="" coords="216,135,379,177"/>
+<area shape="rect" id="node5" href="$classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187" title="根据email查询联系人信息 " alt="" coords="216,201,379,242"/>
+<area shape="rect" id="node6" href="$classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed" title="根据名字查询联系人 " alt="" coords="216,266,379,307"/>
+<area shape="rect" id="node7" href="$classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586" title="根据电话查询联系人 " alt="" coords="216,331,379,373"/>
 </map>

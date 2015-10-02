@@ -110,34 +110,52 @@ $(document).ready(function(){initNavTree('IPersonCrud_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDE_IPERSONCRUD_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="person_8h.html">person.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classIPersonCrud.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIPersonCrud.html">IPersonCrud</a>{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classIPersonCrud.html"> IPersonCrud</a>(){};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">selectByName</a>(std::string name ) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">selectByPhone</a>(std::string phone ) = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">selectByEmail</a>( std::string email) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDE_IPERSONCRUD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&quot;vector&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classIPersonCrud.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIPersonCrud.html">IPersonCrud</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classIPersonCrud.html"> IPersonCrud</a>(){};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">selectByName</a>(std::string name ) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">selectByPhone</a>(std::string phone ) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPerson.html">Person</a> * <a class="code" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">selectByEmail</a>( std::string email) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;Person&gt; * <a class="code" href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">selectAll</a>() = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIPersonCrud.html#a9cad4bed7b82d6ed5decf695f1aeb4c5">deleteByName</a>(std::string name ) = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIPersonCrud.html#aaf0c3740b90613833b45017e3e3d680b">deleteByPhone</a>( std::string phone ) = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIPersonCrud.html#a770e34ae54bbdea889687ef76fe2ffcd">deleteByEmail</a>( std::string email ) = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">add</a>( <a class="code" href="classPerson.html">Person</a> person ) = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">add</a>( std::string name, std::string phone, std::string email) = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDE_IPERSONCRUD_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classIPersonCrud_html_a7b934981b0f3b8a3709b91c3c23255a7"><div class="ttname"><a href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">IPersonCrud::selectByName</a></div><div class="ttdeci">virtual Person * selectByName(std::string name)=0</div><div class="ttdoc">根据名字查询联系人 </div></div>
-<div class="ttc" id="classIPersonCrud_html"><div class="ttname"><a href="classIPersonCrud.html">IPersonCrud</a></div><div class="ttdoc">联系人crud接口 </div><div class="ttdef"><b>Definition:</b> <a href="IPersonCrud_8h_source.html#l00015">IPersonCrud.h:15</a></div></div>
+<div class="ttc" id="classIPersonCrud_html"><div class="ttname"><a href="classIPersonCrud.html">IPersonCrud</a></div><div class="ttdoc">联系人crud接口 </div><div class="ttdef"><b>Definition:</b> <a href="IPersonCrud_8h_source.html#l00016">IPersonCrud.h:16</a></div></div>
 <div class="ttc" id="person_8h_html"><div class="ttname"><a href="person_8h.html">person.h</a></div><div class="ttdoc">联系人定义 </div></div>
+<div class="ttc" id="classIPersonCrud_html_a770e34ae54bbdea889687ef76fe2ffcd"><div class="ttname"><a href="classIPersonCrud.html#a770e34ae54bbdea889687ef76fe2ffcd">IPersonCrud::deleteByEmail</a></div><div class="ttdeci">virtual void deleteByEmail(std::string email)=0</div><div class="ttdoc">通过email删除联系人 </div></div>
+<div class="ttc" id="classIPersonCrud_html_aaf0c3740b90613833b45017e3e3d680b"><div class="ttname"><a href="classIPersonCrud.html#aaf0c3740b90613833b45017e3e3d680b">IPersonCrud::deleteByPhone</a></div><div class="ttdeci">virtual void deleteByPhone(std::string phone)=0</div><div class="ttdoc">通过phone删除联系人 </div></div>
 <div class="ttc" id="classIPersonCrud_html_a118295c6d97902d5f9754eee88177a88"><div class="ttname"><a href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">IPersonCrud::selectByPhone</a></div><div class="ttdeci">virtual Person * selectByPhone(std::string phone)=0</div><div class="ttdoc">根据电话查询联系人 </div></div>
 <div class="ttc" id="classPerson_html"><div class="ttname"><a href="classPerson.html">Person</a></div><div class="ttdoc">联系人定义 </div><div class="ttdef"><b>Definition:</b> <a href="person_8h_source.html#l00016">person.h:16</a></div></div>
+<div class="ttc" id="classIPersonCrud_html_af0e822191cf2dec35b574ec9f2e81047"><div class="ttname"><a href="classIPersonCrud.html#af0e822191cf2dec35b574ec9f2e81047">IPersonCrud::selectAll</a></div><div class="ttdeci">virtual std::vector&lt; Person &gt; * selectAll()=0</div><div class="ttdoc">查询所有的联系人 </div></div>
 <div class="ttc" id="classIPersonCrud_html_aa843677f6c86dd68d1aded4a47dd336c"><div class="ttname"><a href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">IPersonCrud::selectByEmail</a></div><div class="ttdeci">virtual Person * selectByEmail(std::string email)=0</div><div class="ttdoc">根据email查询联系人信息 </div></div>
+<div class="ttc" id="classIPersonCrud_html_a65b5ce29a7c3485b83d54f139971e412"><div class="ttname"><a href="classIPersonCrud.html#a65b5ce29a7c3485b83d54f139971e412">IPersonCrud::add</a></div><div class="ttdeci">virtual void add(Person person)=0</div><div class="ttdoc">根据给定的person对象添加 </div></div>
+<div class="ttc" id="classIPersonCrud_html_a9cad4bed7b82d6ed5decf695f1aeb4c5"><div class="ttname"><a href="classIPersonCrud.html#a9cad4bed7b82d6ed5decf695f1aeb4c5">IPersonCrud::deleteByName</a></div><div class="ttdeci">virtual void deleteByName(std::string name)=0</div><div class="ttdoc">通过name删除联系人 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="IPersonCrud_8h.html">IPersonCrud.h</a></li>
-    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:48 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 03:24:39 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
