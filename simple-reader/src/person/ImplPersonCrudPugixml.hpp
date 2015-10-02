@@ -34,6 +34,14 @@ public:
 
 	Person * selectByEmail(std::string email);
 
+	std::vector<Person> * selectAll();
+
+	void deleteByName(std::string name);
+
+	void deleteByPhone(std::string phone);
+
+	void deleteByEmail(std::string email);
+
 private:
 	//工具方法
 	/** 根据给定的属性类型及属性值查询一个node
@@ -73,7 +81,7 @@ private:
 };
 
 Person * ImplPersonCrudPugixml::selectByName(std::string name) {
-	selectNode("name",name);
+	selectNode("name", name);
 
 	Person * person = nodeToPerson();
 
@@ -81,7 +89,7 @@ Person * ImplPersonCrudPugixml::selectByName(std::string name) {
 }
 
 Person * ImplPersonCrudPugixml::selectByPhone(std::string phone) {
-	selectNode("phone",phone);
+	selectNode("phone", phone);
 
 	Person * person = nodeToPerson();
 
@@ -89,14 +97,47 @@ Person * ImplPersonCrudPugixml::selectByPhone(std::string phone) {
 }
 
 Person * ImplPersonCrudPugixml::selectByEmail(std::string email) {
-	selectNode("email",email);
+	selectNode("email", email);
 
 	Person * person = nodeToPerson();
 
 	return person;
 }
 
+std::vector<Person> * ImplPersonCrudPugixml::selectAll() {
+	std::vector<Person> * personList = new std::vector<Person>();
 
+	std::string query = "//person";
+	pugi::xpath_node_set pathnodes = doc.select_nodes(query.c_str());
+
+	for (pugi::xpath_node_set::const_iterator it = pathnodes.begin();
+			it != pathnodes.end(); ++it) {
+		pugi::xpath_node pathnode = *it;
+		node = pathnode.node();
+		Person *p = nodeToPerson();
+		personList->push_back(*p);
+	}
+
+	return personList;
+}
+
+void ImplPersonCrudPugixml::deleteByName(std::string name) {
+	selectNode("name", name);
+	root.remove_child(node);
+	doc.save_file(filename.c_str());
+}
+
+void ImplPersonCrudPugixml::deleteByPhone(std::string phone) {
+	selectNode("phone", phone);
+	root.remove_child(node);
+	doc.save_file(filename.c_str());
+}
+
+void ImplPersonCrudPugixml::deleteByEmail(std::string email) {
+	selectNode("email", email);
+	root.remove_child(node);
+	doc.save_file(filename.c_str());
+}
 
 void ImplPersonCrudPugixml::selectNode(std::string type, std::string val) {
 	create_query(type, val);

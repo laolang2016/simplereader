@@ -37,6 +37,51 @@ int main(void) {
 	std::cout << "通过email查询：" << std::endl;
 	p = pc->selectByEmail("1236@123.com");
 	std::cout << p->toString() << std::endl;
+
+	std::cout << "输出所有：" << std::endl;
+	std::vector<Person> *personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+
+	std::cout << "通过name删除" << std::endl;
+	pc->deleteByName("小代码");
+
+	std::cout << "输出所有：" << std::endl;
+	std::cout << "测试：size:" << personList->size() << std::endl;
+	personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+
+	std::cout << "通过phone删除" << std::endl;
+	pc->deleteByPhone("111");
+
+	std::cout << "输出所有：" << std::endl;
+	std::cout << "测试：size:" << personList->size() << std::endl;
+	personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+
+	std::cout << "通过email删除" << std::endl;
+	pc->deleteByEmail("666@qq.com");
+
+	std::cout << "输出所有：" << std::endl;
+	std::cout << "测试：size:" << personList->size() << std::endl;
+	personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+
 	return 0;
 }
 
