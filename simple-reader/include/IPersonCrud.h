@@ -64,6 +64,20 @@ public:
 	 * @param email 要删除的联系人的email
 	 */
 	virtual void deleteByEmail( std::string email ) = 0;
+	
+	/** 根据给定的person对象添加
+	 * 
+	 * @param person 给定的person对象 
+	 */
+	virtual void add( Person person ) = 0;
+	
+	/** 根据给定的属性值添加
+	 * 
+	 * @param name 要添加的联系人的名字
+	 * @param phone 要添加的联系人的电话
+	 * @param email 要添加的联系人的email
+	 */
+	virtual void add( std::string name, std::string phone, std::string email) = 0;
 };
 
 

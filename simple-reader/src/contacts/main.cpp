@@ -82,6 +82,30 @@ int main(void) {
 		std::cout << it->toString() << std::endl;
 	}
 
+	std::cout << "通过给定的person添加：" << std::endl;
+	Person pnewone("新一", "011", "0101@00.com");
+	pc->add(pnewone);
+	std::cout << "输出所有：" << std::endl;
+	std::cout << "测试：size:" << personList->size() << std::endl;
+	personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+	
+	std::cout << "通过给定的person属性添加：" << std::endl;
+	
+	pc->add("新二","000222","000222@qq.com");
+	std::cout << "输出所有：" << std::endl;
+	std::cout << "测试：size:" << personList->size() << std::endl;
+	personList = pc->selectAll();
+
+	for (std::vector<Person>::iterator it = personList->begin();
+			it != personList->end(); ++it) {
+		std::cout << it->toString() << std::endl;
+	}
+
 	return 0;
 }
 

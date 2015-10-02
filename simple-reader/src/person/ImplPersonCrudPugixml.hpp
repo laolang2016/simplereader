@@ -42,6 +42,10 @@ public:
 
 	void deleteByEmail(std::string email);
 
+	void add(Person person);
+
+	void add(std::string name, std::string phone, std::string email);
+
 private:
 	//工具方法
 	/** 根据给定的属性类型及属性值查询一个node
@@ -58,6 +62,10 @@ private:
 	 */
 	void create_query(std::string type, std::string val);
 
+	/** 将当前node转换为一个新的person对象
+	 * 
+	 * @return
+	 */
 	Person * nodeToPerson();
 
 private:
@@ -136,6 +144,25 @@ void ImplPersonCrudPugixml::deleteByPhone(std::string phone) {
 void ImplPersonCrudPugixml::deleteByEmail(std::string email) {
 	selectNode("email", email);
 	root.remove_child(node);
+	doc.save_file(filename.c_str());
+}
+
+void ImplPersonCrudPugixml::add(Person person) {
+	pugi::xml_node newNode = root.append_child("person");
+	newNode.append_attribute("name") = person.getName().c_str();
+	newNode.append_attribute("phone") = person.getPhone().c_str();
+	newNode.append_attribute("email") = person.getEmail().c_str();
+	doc.save_file(filename.c_str());
+
+}
+
+void ImplPersonCrudPugixml::add(std::string name, std::string phone,
+		std::string email) {
+	Person person(name, phone, email);
+	pugi::xml_node newNode = root.append_child("person");
+	newNode.append_attribute("name") = person.getName().c_str();
+	newNode.append_attribute("phone") = person.getPhone().c_str();
+	newNode.append_attribute("email") = person.getEmail().c_str();
 	doc.save_file(filename.c_str());
 }
 
