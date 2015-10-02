@@ -4,11 +4,6 @@ include_directories(${PROJECT_SOURCE_DIR}/include
   ${PROJECT_SOURCE_DIR}/src/pugixml
   )
 
-
-
-
-
-
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 # 之前的添加动态库/静态库的方法

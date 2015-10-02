@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['person',['Person',['../classPerson.html',1,'']]]
+  ['implpersoncrudpugixml',['ImplPersonCrudPugixml',['../classImplPersonCrudPugixml.html',1,'']]],
+  ['ipersoncrud',['IPersonCrud',['../classIPersonCrud.html',1,'']]]
 ];

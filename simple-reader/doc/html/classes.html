@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
     <ul class="tablist">
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li class="current"><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
       <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('classes.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,21 +108,24 @@ $(document).ready(function(){initNavTree('classes.html','');});
 <div class="title">类索引</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_P">P</a></div>
+<div class="qindex"><a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_X">X</a></div>
 <table style="margin: 10px; white-space: nowrap;" align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
+<tr><td rowspan="2" valign="bottom"><a name="letter_I"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;I&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classIPersonCrud.html">IPersonCrud</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_x"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;x&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="structpugi_1_1xml__node__struct.html">xml_node_struct</a> (pugi)&#160;&#160;&#160;</td></tr>
 <tr><td rowspan="2" valign="bottom"><a name="letter_P"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;P&#160;&#160;</div></td></tr></table>
 </td><td></td></tr>
-<tr><td></td></tr>
-<tr><td valign="top"><a class="el" href="classPerson.html">Person</a>&#160;&#160;&#160;</td><td></td></tr>
-<tr><td></td><td></td></tr>
+<tr><td valign="top"><a class="el" href="classImplPersonCrudPugixml.html">ImplPersonCrudPugixml</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="structpugi_1_1xml__attribute__struct.html">xml_attribute_struct</a> (pugi)&#160;&#160;&#160;</td><td></td></tr>
+<tr><td></td><td valign="top"><a class="el" href="classPerson.html">Person</a>&#160;&#160;&#160;</td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
 </table>
-<div class="qindex"><a class="qindex" href="#letter_P">P</a></div>
+<div class="qindex"><a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_X">X</a></div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2015年 九月 30日 星期三 03:49:57 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:50 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
     <ul class="tablist">
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
       <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('classPerson.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,15 +111,17 @@ $(document).ready(function(){initNavTree('classPerson.html','');});
 
 <p>成员的完整列表，这些成员属于 <a class="el" href="classPerson.html">Person</a>,包括所有继承而来的类成员</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classPerson.html#a0397c6f89fafc12e738923f612bc41a3">Person</a>()</td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPerson.html#a54a6a144613d1567f3b4ff130f7ca2f4">Person</a>(string name, string phone, string email)</td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPerson.html#a669b64897b4d823a27bb5866368d4dfa">name</a></td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPerson.html#a0397c6f89fafc12e738923f612bc41a3">Person</a>()</td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPerson.html#a54a6a144613d1567f3b4ff130f7ca2f4">Person</a>(string name, string phone, string email)</td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPerson.html#a8cfb23c6a96c08c6a6b0c5f50cb8ebe9">phone</a></td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPerson.html#af167f48c3e444a5c5922829139621e9d">toString</a>()</td><td class="entry"><a class="el" href="classPerson.html">Person</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2015年 九月 30日 星期三 03:49:57 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:50 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

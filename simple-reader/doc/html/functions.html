@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
     <ul class="tablist">
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
       <li class="current"><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
@@ -77,6 +78,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>全部</span></a></li>
       <li><a href="functions_func.html"><span>函数</span></a></li>
+      <li><a href="functions_vars.html"><span>变量</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_x"><span>x</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -99,7 +116,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,12 +126,126 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div><ul>
-<li>Person()
-: <a class="el" href="classPerson.html#a0397c6f89fafc12e738923f612bc41a3">Person</a>
+<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div>
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>create_query()
+: <a class="el" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959">ImplPersonCrudPugixml</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>doc
+: <a class="el" href="classImplPersonCrudPugixml.html#aeaf51a7240c737d00d1a3959494487f5">ImplPersonCrudPugixml</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>filename
+: <a class="el" href="classImplPersonCrudPugixml.html#a97724d1f18cd280c1e55320f71ecdc66">ImplPersonCrudPugixml</a>
+</li>
+<li>first_attribute
+: <a class="el" href="structpugi_1_1xml__node__struct.html#a482d2daf97ce0745661cb2c57d8f6fb3">pugi::xml_node_struct</a>
+</li>
+<li>first_child
+: <a class="el" href="structpugi_1_1xml__node__struct.html#af72c49a0f81928ef664d9d2f0260f23d">pugi::xml_node_struct</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="classPerson.html#a669b64897b4d823a27bb5866368d4dfa">Person</a>
+, <a class="el" href="structpugi_1_1xml__attribute__struct.html#aa886c4aae23a132e1704717721ee2c19">pugi::xml_attribute_struct</a>
+, <a class="el" href="structpugi_1_1xml__node__struct.html#ae2324fdbd1e307fb12007d1d0f957a0b">pugi::xml_node_struct</a>
+</li>
+<li>next_attribute
+: <a class="el" href="structpugi_1_1xml__attribute__struct.html#a9860c0eb7fa72dc9b69ee9b0575f9efc">pugi::xml_attribute_struct</a>
+</li>
+<li>next_sibling
+: <a class="el" href="structpugi_1_1xml__node__struct.html#acf0867e3a77871e37132046d97398a6d">pugi::xml_node_struct</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>parent
+: <a class="el" href="structpugi_1_1xml__node__struct.html#af692c222bcc5a9f61108cb3ae0b7b5ea">pugi::xml_node_struct</a>
+</li>
+<li>pathnode
+: <a class="el" href="classImplPersonCrudPugixml.html#a42e035273fb1d01be6bb0c082ab176ac">ImplPersonCrudPugixml</a>
+</li>
+<li>Person()
+: <a class="el" href="classPerson.html#a54a6a144613d1567f3b4ff130f7ca2f4">Person</a>
+</li>
+<li>phone
+: <a class="el" href="classPerson.html#a8cfb23c6a96c08c6a6b0c5f50cb8ebe9">Person</a>
+</li>
+<li>prev_attribute_c
+: <a class="el" href="structpugi_1_1xml__attribute__struct.html#a0e3a022235b316e4cfc1034ceb7d7862">pugi::xml_attribute_struct</a>
+</li>
+<li>prev_sibling_c
+: <a class="el" href="structpugi_1_1xml__node__struct.html#a74e62128c88c422c0ed969633bbb2d4e">pugi::xml_node_struct</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>query
+: <a class="el" href="classImplPersonCrudPugixml.html#aae3be7745f0da5e03225b1cafb771e02">ImplPersonCrudPugixml</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>root
+: <a class="el" href="classImplPersonCrudPugixml.html#af491fff4854cb46df4880851fdaaa85e">ImplPersonCrudPugixml</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>selectByEmail()
+: <a class="el" href="classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187">ImplPersonCrudPugixml</a>
+, <a class="el" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">IPersonCrud</a>
+</li>
+<li>selectByName()
+: <a class="el" href="classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed">ImplPersonCrudPugixml</a>
+, <a class="el" href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">IPersonCrud</a>
+</li>
+<li>selectByPhone()
+: <a class="el" href="classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586">ImplPersonCrudPugixml</a>
+, <a class="el" href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">IPersonCrud</a>
+</li>
+<li>selectNode()
+: <a class="el" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af">ImplPersonCrudPugixml</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>toString()
 : <a class="el" href="classPerson.html#af167f48c3e444a5c5922829139621e9d">Person</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>value
+: <a class="el" href="structpugi_1_1xml__attribute__struct.html#ae652627d56cb9dcc0afdd1fbf6570364">pugi::xml_attribute_struct</a>
+, <a class="el" href="structpugi_1_1xml__node__struct.html#a191e708864fccda17bb66157afdadd2d">pugi::xml_node_struct</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
+<li>xml_attribute_struct()
+: <a class="el" href="structpugi_1_1xml__attribute__struct.html#a57bb21cb72613e746a659efdd6425b94">pugi::xml_attribute_struct</a>
+</li>
+<li>xml_node_struct()
+: <a class="el" href="structpugi_1_1xml__node__struct.html#af9af20f835af8b6b99f9a39c93920ea6">pugi::xml_node_struct</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -122,7 +253,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2015年 九月 30日 星期三 03:49:57 , 为 simple-reader contacts使用 
+    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:50 , 为 simple-reader contacts使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

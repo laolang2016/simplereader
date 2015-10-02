@@ -6,9 +6,11 @@ var NAVTREE =
     [ "类", null, [
       [ "类列表", "annotated.html", "annotated" ],
       [ "类索引", "classes.html", null ],
+      [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", null ],
-        [ "函数", "functions_func.html", null ]
+        [ "函数", "functions_func.html", null ],
+        [ "变量", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "文件", null, [
@@ -19,7 +21,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+".html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

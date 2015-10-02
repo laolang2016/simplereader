@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>simple-reader contacts: ImplPersonCrudPugixml类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">simple-reader contacts
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classImplPersonCrudPugixml.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classImplPersonCrudPugixml-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ImplPersonCrudPugixml类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>联系人crud实现  
+ <a href="classImplPersonCrudPugixml.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 ImplPersonCrudPugixml 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml__inherit__graph.png" border="0" usemap="#ImplPersonCrudPugixml_inherit__map" alt="Inheritance graph"/></div>
+<map name="ImplPersonCrudPugixml_inherit__map" id="ImplPersonCrudPugixml_inherit__map">
+<area shape="rect" id="node2" href="classIPersonCrud.html" title="联系人crud接口 " alt="" coords="39,5,133,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+ImplPersonCrudPugixml 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml__coll__graph.png" border="0" usemap="#ImplPersonCrudPugixml_coll__map" alt="Collaboration graph"/></div>
+<map name="ImplPersonCrudPugixml_coll__map" id="ImplPersonCrudPugixml_coll__map">
+<area shape="rect" id="node2" href="classIPersonCrud.html" title="联系人crud接口 " alt="" coords="39,5,133,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7dd7f50cfdcc634e05717318422771ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPerson.html">Person</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed">selectByName</a> (std::string name)</td></tr>
+<tr class="memdesc:a7dd7f50cfdcc634e05717318422771ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据名字查询联系人  <a href="#a7dd7f50cfdcc634e05717318422771ed">更多...</a><br/></td></tr>
+<tr class="separator:a7dd7f50cfdcc634e05717318422771ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c52a4754da57f66b2c157504f2d586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPerson.html">Person</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586">selectByPhone</a> (std::string phone)</td></tr>
+<tr class="memdesc:a24c52a4754da57f66b2c157504f2d586"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据电话查询联系人  <a href="#a24c52a4754da57f66b2c157504f2d586">更多...</a><br/></td></tr>
+<tr class="separator:a24c52a4754da57f66b2c157504f2d586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f0d6a00f294e2fb9755a209934d187"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPerson.html">Person</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187">selectByEmail</a> (std::string email)</td></tr>
+<tr class="memdesc:a61f0d6a00f294e2fb9755a209934d187"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据email查询联系人信息  <a href="#a61f0d6a00f294e2fb9755a209934d187">更多...</a><br/></td></tr>
+<tr class="separator:a61f0d6a00f294e2fb9755a209934d187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ab4daa244d2f8ec229dfc0f5cf2ce97af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af">selectNode</a> (std::string type, std::string val)</td></tr>
+<tr class="memdesc:ab4daa244d2f8ec229dfc0f5cf2ce97af"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的属性类型及属性值查询一个node  <a href="#ab4daa244d2f8ec229dfc0f5cf2ce97af">更多...</a><br/></td></tr>
+<tr class="separator:ab4daa244d2f8ec229dfc0f5cf2ce97af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af698e2bcbd3a98143f88c3f3b4480959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959">create_query</a> (std::string type, std::string val)</td></tr>
+<tr class="memdesc:af698e2bcbd3a98143f88c3f3b4480959"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的type与val创建xpath语句  <a href="#af698e2bcbd3a98143f88c3f3b4480959">更多...</a><br/></td></tr>
+<tr class="separator:af698e2bcbd3a98143f88c3f3b4480959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a97724d1f18cd280c1e55320f71ecdc66"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#a97724d1f18cd280c1e55320f71ecdc66">filename</a></td></tr>
+<tr class="memdesc:a97724d1f18cd280c1e55320f71ecdc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; xml文件名字，全路径  <a href="#a97724d1f18cd280c1e55320f71ecdc66">更多...</a><br/></td></tr>
+<tr class="separator:a97724d1f18cd280c1e55320f71ecdc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf51a7240c737d00d1a3959494487f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf51a7240c737d00d1a3959494487f5"></a>
+pugi::xml_document&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#aeaf51a7240c737d00d1a3959494487f5">doc</a></td></tr>
+<tr class="memdesc:aeaf51a7240c737d00d1a3959494487f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">xml文档根节点 <br/></td></tr>
+<tr class="separator:aeaf51a7240c737d00d1a3959494487f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af491fff4854cb46df4880851fdaaa85e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af491fff4854cb46df4880851fdaaa85e"></a>
+pugi::xml_node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#af491fff4854cb46df4880851fdaaa85e">root</a></td></tr>
+<tr class="memdesc:af491fff4854cb46df4880851fdaaa85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">xpath语句 <br/></td></tr>
+<tr class="separator:af491fff4854cb46df4880851fdaaa85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3be7745f0da5e03225b1cafb771e02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae3be7745f0da5e03225b1cafb771e02"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#aae3be7745f0da5e03225b1cafb771e02">query</a></td></tr>
+<tr class="memdesc:aae3be7745f0da5e03225b1cafb771e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前操作提查询的path_node <br/></td></tr>
+<tr class="separator:aae3be7745f0da5e03225b1cafb771e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e035273fb1d01be6bb0c082ab176ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42e035273fb1d01be6bb0c082ab176ac"></a>
+pugi::xpath_node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImplPersonCrudPugixml.html#a42e035273fb1d01be6bb0c082ab176ac">pathnode</a></td></tr>
+<tr class="memdesc:a42e035273fb1d01be6bb0c082ab176ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前操作的node <br/></td></tr>
+<tr class="separator:a42e035273fb1d01be6bb0c082ab176ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>联系人crud实现 </p>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00016">16</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af698e2bcbd3a98143f88c3f3b4480959"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImplPersonCrudPugixml::create_query </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据给定的type与val创建xpath语句 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>值为 name phone email 中的一种 </td></tr>
+    <tr><td class="paramname">val</td><td>name或phone或email属性的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00107">107</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00066">query</a>.</p>
+
+<p>参考自 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00101">selectNode()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_af698e2bcbd3a98143f88c3f3b4480959_icgraph.png" border="0" usemap="#classImplPersonCrudPugixml_af698e2bcbd3a98143f88c3f3b4480959_icgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_af698e2bcbd3a98143f88c3f3b4480959_icgraph" id="classImplPersonCrudPugixml_af698e2bcbd3a98143f88c3f3b4480959_icgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af" title="根据给定的属性类型及属性值查询一个node " alt="" coords="216,70,379,111"/><area shape="rect" id="node3" href="classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed" title="根据名字查询联系人 " alt="" coords="427,5,589,46"/><area shape="rect" id="node4" href="classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586" title="根据电话查询联系人 " alt="" coords="427,70,589,111"/><area shape="rect" id="node5" href="classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187" title="根据email查询联系人信息 " alt="" coords="427,135,589,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a61f0d6a00f294e2fb9755a209934d187"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPerson.html">Person</a> * ImplPersonCrudPugixml::selectByEmail </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>email</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据email查询联系人信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>待查询的联系人的email </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>查询到的person对象 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>查无此人 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classIPersonCrud.html#aa843677f6c86dd68d1aded4a47dd336c">IPersonCrud</a>.</p>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00091">91</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00101">selectNode()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_a61f0d6a00f294e2fb9755a209934d187_cgraph.png" border="0" usemap="#classImplPersonCrudPugixml_a61f0d6a00f294e2fb9755a209934d187_cgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_a61f0d6a00f294e2fb9755a209934d187_cgraph" id="classImplPersonCrudPugixml_a61f0d6a00f294e2fb9755a209934d187_cgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af" title="根据给定的属性类型及属性值查询一个node " alt="" coords="216,5,379,46"/><area shape="rect" id="node3" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959" title="根据给定的type与val创建xpath语句 " alt="" coords="427,5,589,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7dd7f50cfdcc634e05717318422771ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPerson.html">Person</a> * ImplPersonCrudPugixml::selectByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据名字查询联系人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>待查询的联系人的名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>查询到的Person对象 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL查无此人</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classIPersonCrud.html#a7b934981b0f3b8a3709b91c3c23255a7">IPersonCrud</a>.</p>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00101">selectNode()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_a7dd7f50cfdcc634e05717318422771ed_cgraph.png" border="0" usemap="#classImplPersonCrudPugixml_a7dd7f50cfdcc634e05717318422771ed_cgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_a7dd7f50cfdcc634e05717318422771ed_cgraph" id="classImplPersonCrudPugixml_a7dd7f50cfdcc634e05717318422771ed_cgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af" title="根据给定的属性类型及属性值查询一个node " alt="" coords="216,5,379,46"/><area shape="rect" id="node3" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959" title="根据给定的type与val创建xpath语句 " alt="" coords="427,5,589,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a24c52a4754da57f66b2c157504f2d586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPerson.html">Person</a> * ImplPersonCrudPugixml::selectByPhone </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>phone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据电话查询联系人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td>待查询的联系人的电话 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>查询到的person对象 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>查无此人 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classIPersonCrud.html#a118295c6d97902d5f9754eee88177a88">IPersonCrud</a>.</p>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00101">selectNode()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_a24c52a4754da57f66b2c157504f2d586_cgraph.png" border="0" usemap="#classImplPersonCrudPugixml_a24c52a4754da57f66b2c157504f2d586_cgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_a24c52a4754da57f66b2c157504f2d586_cgraph" id="classImplPersonCrudPugixml_a24c52a4754da57f66b2c157504f2d586_cgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#ab4daa244d2f8ec229dfc0f5cf2ce97af" title="根据给定的属性类型及属性值查询一个node " alt="" coords="216,5,379,46"/><area shape="rect" id="node3" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959" title="根据给定的type与val创建xpath语句 " alt="" coords="427,5,589,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4daa244d2f8ec229dfc0f5cf2ce97af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImplPersonCrudPugixml::selectNode </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据给定的属性类型及属性值查询一个node </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>属性类型 </td></tr>
+    <tr><td class="paramname">val</td><td>属性值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00101">101</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00107">create_query()</a>, <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00069">pathnode</a>, <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00066">query</a> , 以及 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00063">root</a>.</p>
+
+<p>参考自 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00091">selectByEmail()</a>, <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00075">selectByName()</a> , 以及 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00083">selectByPhone()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_cgraph.png" border="0" usemap="#classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_cgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_cgraph" id="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_cgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#af698e2bcbd3a98143f88c3f3b4480959" title="根据给定的type与val创建xpath语句 " alt="" coords="216,5,379,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_icgraph.png" border="0" usemap="#classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_icgraph" alt=""/></div>
+<map name="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_icgraph" id="classImplPersonCrudPugixml_ab4daa244d2f8ec229dfc0f5cf2ce97af_icgraph">
+<area shape="rect" id="node2" href="classImplPersonCrudPugixml.html#a61f0d6a00f294e2fb9755a209934d187" title="根据email查询联系人信息 " alt="" coords="216,5,379,46"/><area shape="rect" id="node3" href="classImplPersonCrudPugixml.html#a7dd7f50cfdcc634e05717318422771ed" title="根据名字查询联系人 " alt="" coords="216,70,379,111"/><area shape="rect" id="node4" href="classImplPersonCrudPugixml.html#a24c52a4754da57f66b2c157504f2d586" title="根据电话查询联系人 " alt="" coords="216,135,379,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a97724d1f18cd280c1e55320f71ecdc66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ImplPersonCrudPugixml::filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&lt; xml文件名字，全路径 </p>
+<p>xml文档对象 </p>
+
+<p>在文件 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a> 第 <a class="el" href="ImplPersonCrudPugixml_8hpp_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/laolang/git/simplereader/simple-reader/src/person/<a class="el" href="ImplPersonCrudPugixml_8hpp_source.html">ImplPersonCrudPugixml.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classImplPersonCrudPugixml.html">ImplPersonCrudPugixml</a></li>
+    <li class="footer">生成于 2015年 十月 3日 星期六 02:13:50 , 为 simple-reader contacts使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>
