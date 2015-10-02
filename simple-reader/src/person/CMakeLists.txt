@@ -1,6 +1,8 @@
 aux_source_directory(. srcs)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include
+  ${PROJECT_SOURCE_DIR}/src/pugixml
+  )
 
 
 
@@ -26,3 +28,5 @@ set_target_properties(person_static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 # VERSION 动态库版本
 # SOVERSION API版本
 set_target_properties(person PROPERTIES VERSION 1.0 SOVERSION 1)
+
+target_link_libraries(person pugixml)
