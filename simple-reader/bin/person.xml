@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <personList>
-  <person name="小代码" phone="153" email="1236@163.com"/>
-  <person name="老狼" phone="152" email="1236@123.com"/>
-  <person name="行者" phone="123" email="1236@qq.com"/>
-  <person name="散人" phone="111" email="000@qq.com"/>
-  <person name="天涯" phone="222" email="666@qq.com"/>
- </personList>
+	<person name="老狼" phone="152" email="1236@123.com" />
+	<person name="行者" phone="123" email="1236@qq.com" />
+	<person name="新一" phone="011" email="0101@00.com" />
+	<person name="新二" phone="000222" email="000222@qq.com" />
+</personList>
