@@ -21,8 +21,10 @@
 							<builder id="cdt.managedbuild.target.gnu.builder.base.1343389319" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.248173355" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.215754375" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
-								<option id="gnu.cpp.compiler.option.include.paths.1016512382" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.cpp.compiler.option.include.paths.1016512382" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/boost"/>
+									<listOptionValue builtIn="false" value="/usr/local/lib/wx/include/gtk2-unicode-3.0"/>
+									<listOptionValue builtIn="false" value="/usr/local/include/wx-3.0"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.550150815" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>

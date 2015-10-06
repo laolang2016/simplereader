@@ -1,0 +1,6 @@
+-I/usr/local/lib/wx/include/gtk2-unicode-3.0 
+-I/usr/local/include/wx-3.0 
+-D_FILE_OFFSET_BITS=64 
+-DWXUSINGDLL 
+-D__WXGTK__ 
+-pthread
